@@ -11,14 +11,17 @@
 
 ## 필요한 것
 
-**Figma 공식 플러그인(`figma@claude-plugins-official`)이 필요해요.** 이 플러그인에는 Figma 커넥터가 들어 있지 않아요. 피그마 시안을 읽고 그리는 Figma 커넥터와, 피그마에 쓰기 전에 불러오는 `figma-use`·`figma-generate-design` 스킬은 모두 Figma 공식 플러그인에서 가져와 써요.
+**Figma 연결이 필요해요.** 이 플러그인에는 Figma 커넥터가 들어 있지 않아요. 아래 둘 중 하나만 되어 있으면 돼요.
+
+- Figma 공식 플러그인 (`/plugin install figma@claude-plugins-official`) — Figma 커넥터와 `figma-use`·`figma-generate-design` 스킬이 함께 들어 있어요
+- 또는 claude.ai의 Customize → Connectors에서 Figma 연결
 
 ## 쓰는 법
 
 - "storyboard 폴더의 화면설계서 정리해줘" → `screen-spec`
 - "피그마 시안이랑 구현 화면 검토해줘" → `design-check`
 
-피그마를 처음 쓸 때는 Figma 공식 플러그인의 커넥터에 로그인되어 있어야 해요.
+피그마를 처음 쓸 때는 Figma에 한 번 로그인해 연결을 허용해야 해요.
 
 ## 규칙 요약
 

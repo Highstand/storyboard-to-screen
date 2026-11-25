@@ -16,7 +16,7 @@
 ## 필요한 것
 
 - [Claude Code](https://claude.com/claude-code)
-- **Figma 공식 플러그인(`figma@claude-plugins-official`)** — 피그마를 읽고 그리는 Figma 커넥터와 `figma-use`·`figma-generate-design` 스킬이 들어 있어요. 이 플러그인에는 Figma 커넥터가 들어 있지 않아요.
+- **Figma 연결** — 이 플러그인에는 Figma 커넥터가 들어 있지 않아요. Figma 공식 플러그인(`figma@claude-plugins-official`)을 설치하거나, claude.ai의 Customize → Connectors에서 Figma를 연결해 두세요. 둘 중 하나만 있으면 돼요.
 
 ## 설치
 

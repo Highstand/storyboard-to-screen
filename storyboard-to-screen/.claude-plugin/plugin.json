@@ -1,10 +1,17 @@
 {
   "name": "storyboard-to-screen",
-  "version": "0.2.0",
-  "description": "기획자의 화면설계서(스토리보드) PDF를 디자이너용 screen-spec.md로 정리하고(screen-spec), 그 기준으로 피그마 시안과 구현 화면을 검수한다(design-check). Figma 공식 플러그인(figma@claude-plugins-official)이 필요하다.",
-  "author": { "name": "피그마튜터" },
+  "version": "0.2.1",
+  "description": "기획자의 화면설계서(스토리보드) PDF를 디자이너용 screen-spec.md로 정리하고(screen-spec), 그 기준으로 피그마 시안과 구현 화면을 검수한다(design-check). Figma 연결(공식 Figma 플러그인 또는 Figma 커넥터)이 필요하다.",
+  "author": {
+    "name": "피그마튜터"
+  },
   "license": "MIT",
   "repository": "https://github.com/Highstand/storyboard-to-screen",
-  "keywords": ["storyboard", "화면설계서", "figma", "design-qa", "handoff"],
-  "dependencies": ["figma@claude-plugins-official"]
+  "keywords": [
+    "storyboard",
+    "화면설계서",
+    "figma",
+    "design-qa",
+    "handoff"
+  ]
 }
