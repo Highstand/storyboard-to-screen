@@ -3,7 +3,7 @@
 기획자가 준 화면설계서(스토리보드) PDF에서 출발해, 디자이너가 시안을 만들고 구현 화면까지 검수하는 흐름을 담은 Claude Code 플러그인이에요.
 
 ```
-화면설계서 PDF ──screen-decode──▶ 화면해독.md ──(디자인·구현)──▶ 피그마 시안 + 구현 화면 ──screen-review──▶ 시안·구현 검토.md
+화면설계서 PDF ──screen-decode──▶ 화면해독.md ──(디자인·구현)──▶ 피그마 시안 + 구현 화면 ──design-check──▶ 시안·구현 검토.md
 ```
 
 ## 들어 있는 것
@@ -11,7 +11,7 @@
 | 스킬 | 하는 일 |
 |---|---|
 | `screen-decode` | 화면설계서 PDF를 읽고 `output/<PDF 파일명>_화면해독.md`를 만들어요. 화면 목록, 화면별 UI 요소·상태 4종(기본/빈/에러/로딩)·인터랙션·원문 문구, 원본 페이지 번호, 기획자 질문('디자인 전에 꼭 확인' 7건 이하 + '나중에 확인')을 정리해요. |
-| `screen-review` | 화면해독.md를 기준으로 피그마 시안과 구현 화면을 함께 검수해요. 구현 화면은 로컬 서버에서 직접 눌러보고, 찾은 것을 '고칠 것 · 맞출 것 · 정상(기획 미정)'으로 나눠 `output/<프로젝트명> 시안·구현 검토.md`에 저장해요. |
+| `design-check` | 화면해독.md를 기준으로 피그마 시안과 구현 화면을 함께 검수해요. 구현 화면은 로컬 서버에서 직접 눌러보고, 찾은 것을 '고칠 것 · 맞출 것 · 정상(기획 미정)'으로 나눠 `output/<프로젝트명> 시안·구현 검토.md`에 저장해요. |
 
 ## 필요한 것
 
@@ -33,7 +33,7 @@ claude plugin install storyboard-to-screen@figmatutor
 `example/` 폴더에 예시 화면설계서 PDF가 있어요. 작업 폴더에 `storyboard/` 폴더를 만들어 PDF를 넣고 이렇게 말해 보세요.
 
 - "storyboard 폴더의 화면설계서 해독해줘" → `screen-decode`
-- "피그마 시안이랑 구현 화면 검토해줘" → `screen-review`
+- "피그마 시안이랑 구현 화면 검토해줘" → `design-check`
 
 ## 규칙 요약
 
@@ -49,7 +49,7 @@ claude plugin install storyboard-to-screen@figmatutor
 storyboard-to-screen/             플러그인
   .claude-plugin/plugin.json
   skills/screen-decode/SKILL.md
-  skills/screen-review/SKILL.md
+  skills/design-check/SKILL.md
 example/                          예시 화면설계서 PDF
 ```
 

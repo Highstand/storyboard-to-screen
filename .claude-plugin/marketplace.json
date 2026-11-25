@@ -7,7 +7,7 @@
       "name": "storyboard-to-screen",
       "source": "./storyboard-to-screen",
       "description": "화면설계서 PDF → 화면해독.md → 피그마 시안·구현 검수",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }
