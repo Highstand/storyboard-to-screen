@@ -1,0 +1,13 @@
+{
+  "name": "figmatutor",
+  "owner": { "name": "피그마튜터" },
+  "description": "디자이너 작업 흐름을 돕는 Claude Code 플러그인 모음",
+  "plugins": [
+    {
+      "name": "storyboard-to-screen",
+      "source": "./storyboard-to-screen",
+      "description": "화면설계서 PDF → 화면해독.md → 피그마 시안·구현 검수",
+      "version": "0.1.0"
+    }
+  ]
+}
